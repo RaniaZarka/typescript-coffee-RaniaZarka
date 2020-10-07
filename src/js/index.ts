@@ -1,12 +1,16 @@
-interface Person {
-    firstName: string;
-    lastName: string;
-}
+import { Coffee } from "./coffee";
+import { Imilk } from "./Imilk";
+import { Cortado } from "./Cortado";
+import { Latte } from "./Latte";
 
-function greeter(person: Person): string {
-    return "Hello, " + person.firstName + " " + person.lastName;
-}
-let user: Person = { firstName: "John", lastName: "Doe" };
 
-let element: HTMLDivElement = <HTMLDivElement> document.getElementById("content");
-element.innerHTML = greeter(user);
+let cort = new Cortado;
+
+console.log( "Price " +cort.Price());
+console.log( "Strenght " +cort.Strenght());
+console.log("Milk amount " +cort.MImilk());
+
+let latte = new Latte;
+console.log( "Price " + latte.Price());
+console.log( "Strenght " + latte.Strenght());
+console.log("Milk amount " + latte.MImilk());

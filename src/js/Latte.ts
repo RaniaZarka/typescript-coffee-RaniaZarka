@@ -3,6 +3,7 @@ import { Imilk } from "./Imilk";
 
 export class Latte  extends Coffee implements Imilk{
 
+    name= "Latte";
     Price(): number{
         return 40 -this.discount;
     }
@@ -12,5 +13,9 @@ export class Latte  extends Coffee implements Imilk{
     }
     MImilk():number{
         return 120;
+    }
+
+    CoffeeDrink(): string{
+        return this.name;
     }
 }

@@ -1,7 +1,7 @@
 import { Coffee } from "./coffee";
 import { Imilk } from "./Imilk";
 
-export class BlackCoffee  extends Coffee implements Imilk{
+export class BlackCoffee  extends Coffee{
 
     Price(): number{
         return 20 -this.discount;
@@ -10,7 +10,5 @@ export class BlackCoffee  extends Coffee implements Imilk{
     Strenght(): string{
         return "Strong";
     }
-    MImilk():number{
-        return 0;
-    }
+   
 }
